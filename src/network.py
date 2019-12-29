@@ -22,7 +22,6 @@ model = keras.models.Sequential()
 
 # hidden layers
 model.add(keras.layers.Dense(128, activation='sigmoid', input_dim=input_dim))
-model.add(keras.layers.Dense(32, activation='sigmoid'))
 # output layer
 model.add(keras.layers.Dense(num_labels, activation='softmax'))
 model.summary()
