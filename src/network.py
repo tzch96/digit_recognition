@@ -20,7 +20,7 @@ y_test = keras.utils.to_categorical(y_test, num_labels)
 # create the network model
 model = keras.models.Sequential()
 
-# hidden layers
+# hidden layer
 model.add(keras.layers.Dense(128, activation='sigmoid', input_dim=input_dim))
 # output layer
 model.add(keras.layers.Dense(num_labels, activation='softmax'))
